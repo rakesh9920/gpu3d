@@ -1,0 +1,69 @@
+####
+# Template of input files for 3D Monte Carlo simulation.
+# Anything in a line after "#" is ignored as comments.
+# Space lines are also ignored.
+# Lengths are in cm, mua and mus are in 1/cm.
+####
+
+1.0						# file version
+1						# number of runs
+
+### Specify data for run 1
+liver_20M.mco	A				# output filename, ASCII/Binary
+20000000					# No. of photons per source
+
+###########################################################################
+# ABSORPTION GRID DEFINITION
+###########################################################################
+0.0025 0.0025 0.0025				# dx, dy, dz
+120 120 120					# No. of dx, dy, dz .
+
+###########################################################################
+# VOXEL DEFINITION
+###########################################################################	
+0.1 0.1 0.1					# voxel_dx, voxel_dy, voxel_dz
+3 3	3					# No. of voxel_dx, voxel_dy, voxel_dz .
+1.0						# Ambient refractive index
+
+# (ix, iy, iz) must be within limits (0...NX-1, 0...NY-1, 0...NZ-1)
+# Check: setting either mua and mus to 0 seems to create a zone with zero absorption!
+# Default ambient medium: air (surrounding the voxels)
+#ix	#iy	#iz	# n	mua	mus	g	# One line for each voxel
+0	0	0	1.38	0.38	28	0.952
+0	1	0	1.38	0.38	28	0.952
+0	2	0	1.38	0.38	28	0.952
+1	0	0	1.38	0.38	28	0.952
+1	1	0	1.38	0.38	28	0.952
+1	2	0	1.38	0.38	28	0.952
+2	0	0	1.38	0.38	28	0.952
+2	1	0	1.38	0.38	28	0.952
+2	2	0	1.38	0.38	28	0.952
+0	0	1	1.38	0.38	28	0.952
+0	1	1	1.38	0.38	28	0.952
+0	2	1	1.38	0.38	28	0.952
+1	0	1	1.38	0.38	28	0.952
+1	1	1	1.38	0.14	28	0.946
+1	2	1	1.38	0.38	28	0.952
+2	0	1	1.38	0.38	28	0.952
+2	1	1	1.38	0.38	28	0.952
+2	2	1	1.38	0.38	28	0.952
+0	0	2	1.38	0.38	28	0.952
+0	1	2	1.38	0.38	28	0.952
+0	2	2	1.38	0.38	28	0.952
+1	0	2	1.38	0.38	28	0.952
+1	1	2	1.38	0.38	28	0.952
+1	2	2	1.38	0.38	28	0.952
+2	0	2	1.38	0.38	28	0.952
+2	1	2	1.38	0.38	28	0.952
+2	2	2	1.38	0.38	28	0.952
+
+###########################################################################
+# SOURCE DEFINITION (Future work: extend source modelling capabilities)
+# 1 - finite-sized, circular flat beam (downwards)
+###########################################################################
+3			# Number of SOURCES
+
+#xstart	#ystart	#zstart	#radius	#power	#type  
+0.15	0.125	0	0.05	1	1
+0.125	0.175	0	0.05	1	1
+0.175	0.175	0	0.05	1	1
