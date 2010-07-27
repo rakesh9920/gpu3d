@@ -16,7 +16,7 @@ If you don't have a proper graphics card or if you want the best performance fro
 ----
 Then, just follow all the steps in the [http://developer.download.nvidia.com/compute/cuda/3_0/docs/GettingStartedWindows.pdf NVIDIA Getting Started Guide].  
 
-If you have a Fermi GPU, install [http://developer.nvidia.com/object/cuda_3_0_downloads.html CUDA ToolKit 3.0 and GPU Computing SDK code samples] along with the proper Developer Drivers.  *Make sure you upgrade both the driver and the CUDA Toolkit, and not one of the two!  Otherwise, your code will not run !*
+If you have a Fermi GPU, install [http://developer.nvidia.com/object/cuda_3_0_downloads.html CUDA ToolKit 3.0 and GPU Computing SDK code samples] along with the proper Developer Drivers.  *Make sure you upgrade both the driver and the CUDA Toolkit, and not one of the two!  Otherwise, the code will not run !*
 
 == Step 3: Verify the steps above ==
 ----
