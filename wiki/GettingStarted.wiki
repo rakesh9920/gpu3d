@@ -28,6 +28,9 @@ Download and unarchive: [http://gpu3d.googlecode.com/files/gpu3d_win32.zip GPU3D
 
 == Step 5: Run a simple test ==
 ----
+
+*Note: The current release is tuned specifically for GTX 280, GTX 295, and GTX 480 (Fermi).  Older graphics cards may not have enough resources to launch the program.* 
+
 ====_For Windows Users Only_====
   # Run the program by double-clicking *gpu3d.exe*
   # Enter the input file name: *liver.mci*
