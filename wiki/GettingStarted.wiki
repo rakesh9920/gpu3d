@@ -3,23 +3,13 @@
 
 <wiki:toc max_depth="2" />
 
-This tutorial aims to guide new users through the initial pain of setting up, compiling and running the source code.
+This tutorial aims to guide new users through the process of setting up and running our software.
 
-== Step 0: Check your graphics card == 
+== Step 1: Check your graphics card == 
 ----
 Before you start, make sure that your graphics card is CUDA compatible (check Appendix A of the [http://developer.download.nvidia.com/compute/cuda/3_0/toolkit/docs/NVIDIA_CUDA_ProgrammingGuide.pdf CUDA programming guide]) and has a Compute Capability of between 1.1 and 2.0 (Fermi).  Note that atomic instructions are only supported on devices with a Compute Capability of at least 1.1.  Most graphics cards today should be in this category.
 
 If you don't have a proper graphics card or if you want the best performance from our code, we recommend purchasing the latest Fermi-generation GPU, such as [http://www.nvidia.com/object/product_geforce_gtx_480_us.html GeForce GTX 480].  However, ensure that your power supply is at least 600 W (with 6-pin & 8-pin power connectors) and the motherboard supports PCI-E 2.0 x 16.  
-
-== Step 1a: Install Visual Studio (Windows Users Only) ==
-----
-Install Microsoft Visual Studio 2008 (Visual C++ 2008). For a free version, download [http://www.microsoft.com/express/downloads/ Visual C++ 2008 Express Edition].
-
-== Step 1b: Install GNU Compiler and Utilities (Linux Users Only) ==
-----
-Install the GCC compiler and the make utility, from the package manager of your choice. On a Debian-derived OS (e.g., Ubuntu), simply type the following command:
-
-`> sudo aptitude install build-essential`
 
 == Step 2: Install CUDA, Developer Drivers, and SDK Samples ==
 ----
@@ -35,15 +25,13 @@ Make sure you have everything set up properly, by running a simple SDK code samp
 ----
 Download and unarchive: [http://gpu3d.googlecode.com/files/gpu3d_win32.zip GPU3D]
 
-In Linux, type *unzip fast-gpumcml.zip*.   In Windows, use any one of the common compression software such as WinRAR or [http://www.7-zip.org/ 7-Zip (free)].
-
 == Step 5: Run a simple test ==
 ----
 ====_For Windows User Only_====
   # Run the program by double-clicking gpu3d.exe
   # Enter the input file name: *liver.mci*
 
-== Step 6: Plot the simulation output with MATLAB ==
+== (Optional) Step 6: Plot the simulation output with MATLAB ==
 ----
 Use the MATLAB script (*plotslice.m*) to plot the output.  
   
