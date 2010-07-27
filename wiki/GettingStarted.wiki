@@ -31,35 +31,19 @@ If you have a Fermi GPU, install [http://developer.nvidia.com/object/cuda_3_0_do
 ----
 Make sure you have everything set up properly, by running a simple SDK code sample, as suggested in the [http://developer.download.nvidia.com/compute/cuda/3_0/docs/GettingStartedWindows.pdf NVIDIA Getting Started Guide] 
 
-== Step 4: Download our source code package ==
+== Step 4: Download our software package ==
 ----
-Download and unarchive: [http://gpumcml.googlecode.com/files/fast-gpumcml.zip Fast GPUMCML]
+Download and unarchive: [http://gpu3d.googlecode.com/files/gpu3d_win32.zip GPU3D]
 
 In Linux, type *unzip fast-gpumcml.zip*.   In Windows, use any one of the common compression software such as WinRAR or [http://www.7-zip.org/ 7-Zip (free)].
 
-== Step 5: Compile and run GPUMCML ==
+== Step 5: Run a simple test ==
 ----
-====_For Windows User (Visual Studio or VS 2008)_====
-  # Open the project file with VS 2008: *GPUMCML.vcproj* 
-  # Click Build Solution (or press F7) 
-  # Run the program in VS (press F5) _OR_ run the program using the command prompt:  
-    * Start-->Run-->Type *cmd*
-    * Type *cd DIR/fast_gpumcml/executable* where *DIR* is the absolute path where you put the files
-    * Launch the program: Type *GPUMCML ../input/test.mci*
-
-==== _For Linux User (Tested on Ubuntu)_ ====
-1) Type *make* 
-
-2) Execute the correct version based on the compute capability (CC) of your graphics card (check Appendix A of the [http://developer.download.nvidia.com/compute/cuda/3_0/toolkit/docs/NVIDIA_CUDA_ProgrammingGuide.pdf CUDA programming guide]) 
-
-   GTX 480 (Fermi - CC 2.0): Type *./gpumcml.sm_20 input/test.mci* 
-
-   GTX 280 (CC 1.3): Type *./gpumcml.sm_13 input/test.mci*
-
+====_For Windows User Only_====
+  # Run the program by double-clicking gpu3d.exe
+  # Enter the input file name: *liver.mci*
 
 == Step 6: Plot the simulation output with MATLAB ==
 ----
-Use the MATLAB scripts to plot the output 
-   * Go to the *viewoutput* folder
-   * Run *plot_simulation.m* 
-   * Select the output file when prompted.  Two files are generated in Step 5: *test_1M.mco* and *test_100K.mco* executed with 1 million and 100 thousand photon packets, respectively (the files are in the *executable* folder if VS 2008 is used or in the top-level directory if Linux is used).  
+Use the MATLAB script (*plotslice.m*) to plot the output.  
+  
