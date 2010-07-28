@@ -37,5 +37,5 @@ Download and unarchive: [http://gpu3d.googlecode.com/files/gpu3d_win32.zip GPU3D
 
 == (Optional) Step 6: Plot the simulation output with MATLAB ==
 ----
-Use the MATLAB script (*plotslice.m*) to plot the output.  
+Use the MATLAB script (*plotslice.m*) to plot the output or to parse the simulation output file (*liver_20M.mco_node_1*) for further analysis.  
   
