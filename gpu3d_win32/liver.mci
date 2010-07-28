@@ -16,18 +16,16 @@ liver_20M.mco	A				# output filename, ASCII/Binary
 # ABSORPTION GRID DEFINITION
 ###########################################################################
 0.0025 0.0025 0.0025				# dx, dy, dz
-120 120 120					# No. of dx, dy, dz .
+120 120 120					# No. of dx, dy, dz 
 
 ###########################################################################
 # VOXEL DEFINITION
 ###########################################################################	
 0.1 0.1 0.1					# voxel_dx, voxel_dy, voxel_dz
-3 3	3					# No. of voxel_dx, voxel_dy, voxel_dz .
+3 3 3						# No. of voxel_dx, voxel_dy, voxel_dz 
 1.0						# Ambient refractive index
 
 # (ix, iy, iz) must be within limits (0...NX-1, 0...NY-1, 0...NZ-1)
-# Check: setting either mua and mus to 0 seems to create a zone with zero absorption!
-# Default ambient medium: air (surrounding the voxels)
 #ix	#iy	#iz	# n	mua	mus	g	# One line for each voxel
 0	0	0	1.38	0.38	28	0.952
 0	1	0	1.38	0.38	28	0.952
@@ -59,6 +57,7 @@ liver_20M.mco	A				# output filename, ASCII/Binary
 
 ###########################################################################
 # SOURCE DEFINITION (Future work: extend source modelling capabilities)
+# Explanation of the "type" parameter
 # 1 - finite-sized, circular flat beam (downwards)
 ###########################################################################
 3			# Number of SOURCES
