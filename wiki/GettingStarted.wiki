@@ -39,7 +39,7 @@ To scroll through the slices (xy, yz, xz planes), press *1, 2; 3, 4; or 5, 6*.
  
 To rotate, press *q, w; a, s; or z, x* (to rotate around the x, y, and z axes). 
 
-To toggle automatic rotation, press the space bar.  
+To toggle automatic rotation, press the *space bar*.  
 
 == (Optional) Step 6: Plot the simulation output with MATLAB ==
 ----
