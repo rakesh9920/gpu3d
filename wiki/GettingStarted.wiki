@@ -35,6 +35,10 @@ Download and unarchive: [http://gpu3d.googlecode.com/files/gpu3d_win32.zip GPU3D
   # Run the program by double-clicking *gpu3d.exe*
   # Enter the input file name: *liver.mci*
 
+To scroll through the slices (xy, yz, xz planes), press *1, 2; 3, 4; or 5, 6*.
+ 
+To rotate, press *q, w; a, s; or z, x* (to rotate around the x, y, and z axes). 
+
 == (Optional) Step 6: Plot the simulation output with MATLAB ==
 ----
 Use the MATLAB script (*plotslice.m*) to plot the output or to parse the simulation output file (*liver_20M.mco_node_1*) for further analysis.  
